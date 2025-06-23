@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 - 张三的个人空间</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 背景动画 -->
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <!-- 页面内容 -->
+    <div class="main-container">
+        <!-- 侧边导航 -->
+        <nav class="side-nav">
+            <div class="nav-logo">
+                <span>ZS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-text="首页"><i class="bi bi-house-fill"></i></a></li>
+                <li><a href="about.html" data-text="关于我"><i class="bi bi-person-fill"></i></a></li>
+                <li class="active"><a href="portfolio.html" data-text="作品集"><i class="bi bi-briefcase-fill"></i></a></li>
+                <li><a href="contact.html" data-text="联系我"><i class="bi bi-envelope-fill"></i></a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-wechat"></i></a>
+            </div>
+        </nav>
+
+        <!-- 移动菜单按钮 -->
+        <div class="mobile-nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- 内容区域 -->
+        <main class="content">
+            <section class="portfolio-header">
+                <h1 class="animate-text">我的作品集</h1>
+                <p>浏览我的最新项目，包括网站开发、应用设计和UI/UX作品</p>
+                
+                <div class="portfolio-filter">
+                    <button class="filter-item active" data-filter="*">全部</button>
+                    <button class="filter-item" data-filter="web">网站</button>
+                    <button class="filter-item" data-filter="app">应用</button>
+                    <button class="filter-item" data-filter="design">设计</button>
+                </div>
+            </section>
+
+            <section class="portfolio-gallery">
+                <div class="portfolio-grid">
+                    <!-- 项目1 -->
+                    <div class="portfolio-item web" data-category="web">
+                        <div class="portfolio-img">
+                            <img src="images/project1.jpg" alt="企业网站设计">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>企业网站设计</h3>
+                            <div class="portfolio-tags">
+                                <span>Web 设计</span>
+                                <span>HTML/CSS</span>
+                            </div>
+                        </div>
+                        <a href="#project1" class="portfolio-link" data-modal="project1">
+                            <i class="bi bi-plus"></i>
+                        </a>
+                    </div>
+
+                    <!-- 项目2 -->
+                    <div class="portfolio-item app" data-category="app">
+                        <div class="portfolio-img">
+                            <img src="images/project2.jpg" alt="电商应用">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>电商应用</h3>
+                            <div class="portfolio-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                        <a href="#project2" class="portfolio-link" data-modal="project2">
+                            <i class="bi bi-plus"></i>
+                        </a>
+                    </div>
+
+                    <!-- 项目3 -->
+                    <div class="portfolio-item design" data-category="design">
+                        <div class="portfolio-img">
+                            <img src="images/project3.jpg" alt="移动应用界面">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>移动应用界面</h3>
+                            <div class="portfolio-tags">
+                                <span>UI/UX</span>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                        <a href="#project3" class="portfolio-link" data-modal="project3">
+                            <i class="bi bi-plus"></i>
+                        </a>
+                    </div>
+
+                    <!-- 项目4 -->
+                    <div class="portfolio-item web" data-category="web">
+                        <div class="portfolio-img">
+                            <img src="images/project4.jpg" alt="个人博客模板">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>个人博客模板</h3>
+                            <div class="portfolio-tags">
+                                <span>WordPress</span>
+                                <span>响应式设计</span>
+                            </div>
+                        </div>
+                        <a href="#project4" class="portfolio-link" data-modal="project4">
+                            <i class="bi bi-plus"></i>
+                        </a>
+                    </div>
+
+                    <!-- 项目5 -->
+                    <div class="portfolio-item app" data-category="app">
+                        <div class="portfolio-img">
+                            <img src="images/project5.jpg" alt="任务管理应用">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>任务管理应用</h3>
+                            <div class="portfolio-tags">
+                                <span>React</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                        <a href="#project5" class="portfolio-link" data-modal="project5">
+                            <i class="bi bi-plus"></i>
+                        </a>
+                    </div>
+
+                    <!-- 项目6 -->
+                    <div class="portfolio-item design" data-category="design">
+                        <div class="portfolio-img">
+                            <img src="images/project6.jpg" alt="品牌标识设计">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>品牌标识设计</h3>
+                            <div class="portfolio-tags">
+                                <span>品牌设计</span>
+                                <span>Adobe Illustrator</span>
+                            </div>
+                        </div>
+                        <a href="#project6" class="portfolio-link" data-modal="project6">
+                            <i class="bi bi-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 项目详情模态框 -->
+            <div class="portfolio-modals">
+                <!-- 项目1模态框 -->
+                <div id="project1" class="portfolio-modal">
+                    <div class="modal-container">
+                        <div class="modal-close">
+                            <i class="bi bi-x-lg"></i>
+                        </div>
+                        <div class="modal-content">
+                            <h2>企业网站设计</h2>
+                            <div class="modal-img">
+                                <img src="images/project1.jpg" alt="企业网站设计">
+                            </div>
+                            <div class="project-info">
+                                <div class="project-details">
+                                    <p><strong>类别:</strong> 网站开发</p>
+                                    <p><strong>客户:</strong> 某某科技公司</p>
+                                    <p><strong>日期:</strong> 2023年5月</p>
+                                    <p><strong>技术:</strong> HTML5, CSS3, JavaScript, React</p>
+                                </div>
+                                <div class="project-description">
+                                    <h3>项目描述</h3>
+                                    <p>为某某科技公司设计和开发的现代、响应式企业网站。该项目包括首页、关于我们、服务、产品展示和联系页面。网站采用了最新的前端技术，确保在各种设备上都能提供出色的用户体验。</p>
+                                    <p>主要功能包括响应式布局、交互式产品展示、联系表单、新闻博客等。通过优化网站性能，使其在Google PageSpeed Insights测试中获得了95+的分数。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 其他项目模态框结构类似 -->
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>© 2024 张三的个人空间. All Rights Reserved.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-wechat"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

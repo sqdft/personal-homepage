@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 - 张三的个人空间</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 背景动画 -->
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <!-- 页面内容 -->
+    <div class="main-container">
+        <!-- 侧边导航 -->
+        <nav class="side-nav">
+            <div class="nav-logo">
+                <span>ZS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-text="首页"><i class="bi bi-house-fill"></i></a></li>
+                <li class="active"><a href="about.html" data-text="关于我"><i class="bi bi-person-fill"></i></a></li>
+                <li><a href="portfolio.html" data-text="作品集"><i class="bi bi-briefcase-fill"></i></a></li>
+                <li><a href="contact.html" data-text="联系我"><i class="bi bi-envelope-fill"></i></a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-wechat"></i></a>
+            </div>
+        </nav>
+
+        <!-- 移动菜单按钮 -->
+        <div class="mobile-nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- 内容区域 -->
+        <main class="content">
+            <section class="about-header">
+                <h1 class="animate-text">关于我</h1>
+                <p>了解我是谁，我的技能，我的经历，以及我如何帮助您实现网站和应用开发的目标。</p>
+            </section>
+
+            <section class="about-main">
+                <div class="about-me">
+                    <div class="about-me-img">
+                        <img src="images/about-me.jpg" alt="张三照片" class="floating">
+                    </div>
+                    <div class="about-me-content">
+                        <h2>我是张三，<span class="highlight">前端开发工程师</span></h2>
+                        <p>你好！我是一名热爱编程和设计的前端开发工程师，拥有超过5年的网站和应用开发经验。我专注于创建用户友好、视觉美观且性能卓越的数字体验。</p>
+                        <p>我毕业于某某大学计算机科学专业，拥有扎实的计算机科学基础和优秀的编程能力。在我的职业生涯中，我参与过多个大型网站和应用程序的开发，擅长使用现代前端技术栈构建响应式、高性能的产品。</p>
+                        <p>我的技术栈包括HTML5、CSS3、JavaScript (ES6+)、React、Vue.js、Node.js等。同时，我也熟悉UI/UX设计原则，能够与设计师紧密合作，将创意变为现实。</p>
+                        
+                        <div class="about-info">
+                            <div class="about-info-item">
+                                <i class="bi bi-calendar"></i>
+                                <span>出生日期: 1990年01月01日</span>
+                            </div>
+                            <div class="about-info-item">
+                                <i class="bi bi-geo-alt"></i>
+                                <span>所在地: 北京市</span>
+                            </div>
+                            <div class="about-info-item">
+                                <i class="bi bi-envelope"></i>
+                                <span>邮箱: example@email.com</span>
+                            </div>
+                            <div class="about-info-item">
+                                <i class="bi bi-phone"></i>
+                                <span>电话: +86 123 4567 8910</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-section">
+                    <h2 class="section-title">我的经历</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="bi bi-briefcase-fill"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <span class="date">2021 - 至今</span>
+                                <h3>高级前端开发工程师</h3>
+                                <p>某某科技有限公司</p>
+                                <ul>
+                                    <li>负责公司核心产品的前端架构设计和开发</li>
+                                    <li>优化网站性能，提升用户体验</li>
+                                    <li>领导一个由5名开发人员组成的团队</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="bi bi-briefcase-fill"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <span class="date">2019 - 2021</span>
+                                <h3>前端开发工程师</h3>
+                                <p>某某网络科技公司</p>
+                                <ul>
+                                    <li>参与电子商务平台的前端开发</li>
+                                    <li>构建响应式网站和移动应用界面</li>
+                                    <li>与设计师和后端开发人员密切合作</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="bi bi-book-fill"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <span class="date">2019 - 2021</span>
+                                <h3>软件工程硕士学位</h3>
+                                <p>某某大学</p>
+                                <ul>
+                                    <li>专注于前端开发和用户界面设计</li>
+                                    <li>参与多个研究项目</li>
+                                    <li>获得优秀毕业生称号</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="bi bi-book-fill"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <span class="date">2015 - 2019</span>
+                                <h3>计算机科学学士学位</h3>
+                                <p>某某大学</p>
+                                <ul>
+                                    <li>主修计算机科学</li>
+                                    <li>参与多个编程竞赛，获得校级奖项</li>
+                                    <li>开发了多个学生项目</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-section">
+                    <h2 class="section-title">我的服务</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h3>网站开发</h3>
+                            <p>使用最新的技术和框架，开发高性能、响应式的网站，确保在各种设备上都能提供出色的用户体验。</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <h3>移动应用开发</h3>
+                            <p>使用React Native或Flutter等跨平台技术，开发功能丰富、界面精美的移动应用程序。</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-palette"></i>
+                            </div>
+                            <h3>UI/UX设计</h3>
+                            <p>创建直观、美观的用户界面和流畅的用户体验，让您的产品脱颖而出。</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-speedometer2"></i>
+                            </div>
+                            <h3>网站优化</h3>
+                            <p>通过代码优化、资源压缩和最佳实践，提升网站加载速度和整体性能。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>© 2024 张三的个人空间. All Rights Reserved.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-wechat"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

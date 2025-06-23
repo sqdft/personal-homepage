@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 - 张三的个人空间</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 背景动画 -->
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <!-- 页面内容 -->
+    <div class="main-container">
+        <!-- 侧边导航 -->
+        <nav class="side-nav">
+            <div class="nav-logo">
+                <span>ZS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-text="首页"><i class="bi bi-house-fill"></i></a></li>
+                <li><a href="about.html" data-text="关于我"><i class="bi bi-person-fill"></i></a></li>
+                <li><a href="portfolio.html" data-text="作品集"><i class="bi bi-briefcase-fill"></i></a></li>
+                <li class="active"><a href="contact.html" data-text="联系我"><i class="bi bi-envelope-fill"></i></a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-wechat"></i></a>
+            </div>
+        </nav>
+
+        <!-- 移动菜单按钮 -->
+        <div class="mobile-nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- 内容区域 -->
+        <main class="content">
+            <section class="contact-header">
+                <h1 class="animate-text">联系我</h1>
+                <p>如果您有项目需要合作，或想要了解更多信息，请随时与我联系</p>
+            </section>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>联系方式</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>地址</h4>
+                            <p>北京市朝阳区某某路123号</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>邮箱</h4>
+                            <p>example@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>电话</h4>
+                            <p>+86 123 4567 8910</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>工作时间</h4>
+                            <p>周一至周五: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h3>社交媒体</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-wechat"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>给我留言</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="您的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="主题" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="留言内容" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">
+                            <i class="bi bi-send"></i> 发送留言
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <section class="map-section">
+                <h2 class="section-title">我的位置</h2>
+                <div class="map-container">
+                    <!-- 地图占位图 -->
+                    <img src="images/map.jpg" alt="位置地图" class="map-image">
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>© 2024 张三的个人空间. All Rights Reserved.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-wechat"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
